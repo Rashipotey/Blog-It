@@ -1,0 +1,26 @@
+/* Additional app-specific styles can go here */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main.container {
+  flex: 1;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .post-title {
+    font-size: 1.75rem;
+  }
+}
